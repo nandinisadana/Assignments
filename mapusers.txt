@@ -1,0 +1,67 @@
+package assignments;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
+import java.lang.String;
+
+public class MapUsers 
+{
+public static void main(String[] args) {
+	MapUsers map=new MapUsers();
+	System.out.println("hashmap");
+	map.hashMap();
+	System.out.println("linkedhashmap");
+	map.linkedHashMap();
+	System.out.println("treemap");
+	map.treeMap();
+	
+	
+}
+public void hashMap() //hashmap contains the values based on the keys 2. it contains unique keys
+{
+	HashMap<Integer,String> h=new HashMap<Integer, String>();
+	h.put(1, "nandini");
+	h.put(2, "asha");// for adding the elements we had used the put() method
+	h.put(3, "null");
+	h.put(1, "nandini");//it does not allow the duplicate values
+	System.out.println(h);
+	System.out.println(h.get(3));
+	System.out.println(h.size());
+}
+public void linkedHashMap() //it maintains the insertion order
+{
+	LinkedHashMap<Integer,String> map=new LinkedHashMap<>();
+	map.put(1, null);
+	map.put(2, "nandini");
+	map.put(3, "asha");
+	System.out.println(map);
+	map.clear();
+	System.out.println(map);
+	System.out.println(map.isEmpty());
+}
+
+public void treeMap()
+{
+	TreeMap<Integer,String> t1=new TreeMap();
+	t1.put(1, null);
+	t1.put(2,"nandini");
+	t1.put(1, null); //it does not allow the null key and null value and duplicate values
+	System.out.println(t1);
+	System.out.println(t1.clone());
+	
+}
+}
+
+output:
+hashmap
+{1=nandini, 2=asha, 3=null}
+null
+3
+linkedhashmap
+{1=null, 2=nandini, 3=asha}
+{}
+true
+treemap
+{1=null, 2=nandini}
+{1=null, 2=nandini}
