@@ -1,0 +1,18 @@
+package assignments;
+
+public class StringBuilderandBuffer {
+	
+public static void main(String[] args) {
+		
+		StringBuffer buffer = new StringBuffer("Hello how are you?");
+		buffer.append(".How is you day");
+		StringBuilder builder = new StringBuilder(" Hello Builder");
+		builder.append(".we know you are mutable and the fastest");
+		System.out.println(buffer);
+	}
+
+
+}
+
+output:
+Hello how are you?.How is you day
