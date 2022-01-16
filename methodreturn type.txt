@@ -1,0 +1,45 @@
+package assignments;
+
+import java.lang.String;
+
+public class MethodReturnType {
+
+	public static void main(String[] args) {
+		
+		MethodReturnType m=new MethodReturnType();
+		System.out.println(	m.data(23));
+			System.out.println(m.doubleData(23.8));
+			System.out.println(m.floatData(34.1f));
+			System.out.println(m.stringData("nandini"));
+		
+	}
+	
+	public int data(int d)
+	{
+		return d;
+	}
+	
+	public double doubleData(double d1)
+	{
+		return d1;
+	}
+	
+	public float floatData(float f)
+	
+	{
+		return f;
+	}
+	
+	public String stringData(String string)
+	{
+		return string;
+	}
+}
+
+
+output:
+23
+23.8
+34.1
+nandini
+
